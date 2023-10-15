@@ -4,14 +4,20 @@ import "./App.css";
 import { Provider } from "react-redux";
 import myStore from "./store/store";
 import Counter from "./components/Counter";
+import rtkStore from "./rtk-store/store";
 
 function App() {
   return (
-    <Provider store={myStore}>
+    <Provider store={rtkStore}>
       <div className="App">
         <Counter />
       </div>
     </Provider>
+    // <Provider store={myStore}>
+    //   <div className="App">
+    //     <Counter />
+    //   </div>
+    // </Provider>
   );
 }
 
